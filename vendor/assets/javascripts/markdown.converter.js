@@ -130,6 +130,7 @@ else
         // called with the final cooked HTML code. The result of this plugin hook is the actual output of makeHtml
         pluginHooks.addNoop("postConversion");
 
+        var converter = this;
         this.autoNewLine = false;  // when true, RETURN becomes a literal newline
                                    // WARNING: this is a significant deviation from the markdown spec
 
